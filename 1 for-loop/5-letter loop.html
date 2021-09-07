@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var i;
+        function fun1()
+        {
+            var t=(abc.n1.value);
+            var len=t.length;
+            for(i=0;i<len;i++)
+            {
+                document.write(t.charAt(i)+"<br>");
+            }
+            document.write("anwer is ="+i)
+        }
+    </script>
+</head>
+<body>
+    <form name="abc">
+        Enter a number:<input type="text" name="n1"><br><br>
+        <input type="button" name="b1" onclick="fun1()" value="submit"><br><br>
+        <p id="res"></p>
+    </form>
+</body>
+</html>

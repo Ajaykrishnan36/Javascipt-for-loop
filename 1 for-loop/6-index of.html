@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <script>
+            function go(){
+                var i=0;
+                var t=inde.t1.value;
+                var g=inde.t2.value;
+                var len=t.lenght;
+                var s="";
+                for(i=0;i<=len;i++)
+                {
+                    if(t[i]==g)
+                    {
+                        s=s+i+"&nbsp";
+                    }
+                }
+               document.getElementById("ans").innerHTML="index of "+s;
+            }
+        </script>
+    </head>  
+<body>
+    <form name="inde">
+    Enter a text:<input type="text" name="t1"><br><br>
+    Enter a charter:<input type="text" name="t2"><br><br>
+    <input type="button" value="submit" onclick="go()">
+    <p id="ans"></p>
+</form>
+</body>
+</html>
